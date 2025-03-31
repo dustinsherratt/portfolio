@@ -5,6 +5,17 @@ body {
     margin: 0;
     padding: 20px;
 }
+/* Remove underline from links */
+a {
+    text-decoration: none; /* No underline */
+    color: black; /* Default link color */
+}
+
+/* Change color on hover for better interaction */
+a:hover {
+    color: #007bff; /* Light blue color on hover */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
 h1, h2 {
     text-align: center;
 }
