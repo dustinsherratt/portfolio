@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;  /* Apply Montserrat to the whole website */
     background: linear-gradient(to bottom, #ffffff, #add8e6); /* Light blue gradient */
     color: black;
     margin: 0;
