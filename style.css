@@ -16,6 +16,27 @@ a:hover {
     color: #007bff; /* Light blue color on hover */
     transition: color 0.3s ease; /* Smooth color transition */
 }
+/* Media Query for mobile devices */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Reduce padding on small screens */
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items vertically */
+        margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+
+    .btn {
+        padding: 12px 24px; /* Larger buttons on mobile */
+        font-size: 16px; /* Make button text more readable */
+    }
+}
 h1, h2 {
     text-align: center;
 }
