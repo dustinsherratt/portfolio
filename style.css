@@ -11,31 +11,24 @@ body {
     background: linear-gradient(to bottom, #ffffff, #e0f7fa); /* Light blue gradient background */
     color: black;
     padding: 20px;
-    font-size: 16px; /* Default font size for body text */
+    font-size: 16px;
 }
 
-/* Header */
+/* Header Styling */
 header {
     text-align: center;
-    padding: 20px;
+    padding: 40px 0;
 }
 
 header h1 {
-    font-size: 2.5rem; /* Large heading on larger screens */
+    font-size: 2.5rem;
     margin-bottom: 10px;
-}
-
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     padding: 0;
 }
 
@@ -54,119 +47,58 @@ nav ul li a:hover {
     color: #007bff;
 }
 
-/* Sections */
+/* Section Styling */
 section {
     margin-top: 40px;
-    text-align: center; /* Ensures sections are centered */
-}
-
-/* About Section */
-#about {
     text-align: center;
 }
 
-#about h2 {
+section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-#about p {
+section p {
     font-size: 1.1rem;
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Download Resume Button */
-.download-btn-container {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.download-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 12px 30px;
-    font-size: 18px;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.download-btn:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-.download-btn i {
-    margin-left: 10px;
-}
-
-/* Skills Section */
-#skills {
-    text-align: center;
-}
-
-#skills h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
+/* Skills List */
 #skills ul {
     list-style: none;
-    font-size: 1.1rem;
-    margin-top: 20px;
+    padding: 0;
 }
 
 #skills li {
-    margin-bottom: 10px;
-}
-
-/* Projects Section */
-#projects {
-    text-align: center;
-}
-
-#projects h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* Contact Section */
-#contact {
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#contact a {
-    color: #007bff;
-    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 10px 0;
 }
 
 /* Media Queries for Mobile and Tablet Devices */
 @media (max-width: 1024px) {
     body {
-        padding: 15px; /* Slightly reduce padding on tablets */
+        padding: 15px;
     }
 
     header h1 {
-        font-size: 2.2rem; /* Slightly smaller heading */
+        font-size: 2.2rem;
     }
 
     nav ul {
-        flex-direction: column; /* Stack nav links vertically on tablets */
+        flex-direction: column;
     }
 
     nav ul li {
-        margin: 10px 0; /* Adjust margin for stacked layout */
+        margin: 10px 0;
     }
 
-    .download-btn {
-        padding: 10px 25px;
-        font-size: 16px; /* Slightly smaller button text */
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p, #skills ul {
+        padding: 0 10px;
     }
 }
 
@@ -177,32 +109,24 @@ section {
     }
 
     header h1 {
-        font-size: 2rem; /* Reduce heading size on smaller screens */
+        font-size: 2rem;
     }
 
     nav ul {
-        flex-direction: column; /* Stack nav links vertically */
-        text-align: center;
+        flex-direction: column;
     }
 
     nav ul li {
-        margin: 10px 0; /* Adjust margin for vertical layout */
+        margin: 10px 0;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
     }
 
     .download-btn {
         padding: 10px 20px;
         font-size: 14px;
     }
-
-    #skills ul {
-        padding: 0;
-        margin: 0;
-    }
-
-    #skills li {
-        font-size: 1rem; /* Slightly smaller font size */
-    }
 }
 
-/* Media Queries for Extra Small Mobile Devices */
-@media (max-width:
