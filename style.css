@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 20px;
 }
+
 /* Download Button Container */
 .download-btn-container {
     text-align: center;
@@ -60,6 +61,7 @@ a:hover {
     color: #007bff; /* Light blue color on hover */
     transition: color 0.3s ease; /* Smooth color transition */
 }
+
 /* Media Query for mobile devices */
 @media (max-width: 600px) {
     body {
@@ -76,19 +78,28 @@ a:hover {
         margin: 10px 0; /* Adjust margin for vertical layout */
     }
 
+    /* Optional: Button class, if you have buttons with .btn */
     .btn {
         padding: 12px 24px; /* Larger buttons on mobile */
         font-size: 16px; /* Make button text more readable */
     }
 }
+
+/* Navigation Links Style */
+nav ul li a {
+    color: black; /* Make the navigation links black by default */
+}
+
 h1, h2 {
     text-align: center;
 }
+
 nav ul {
     list-style: none;
     text-align: center;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin: 0 15px;
