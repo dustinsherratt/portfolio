@@ -1,97 +1,229 @@
-/* Apply Montserrat to the whole website */
-body {
-    font-family: 'Montserrat', sans-serif;  /* Apply Montserrat to the whole website */
-    background: linear-gradient(to bottom, #ffffff, #add8e6); /* Light blue gradient */
-    background-color: #ffffff; /* Fallback color */
-    color: black;
+/* Global Reset */
+* {
     margin: 0;
-    padding: 20px;
-    overflow: visible; /* Ensure visibility */
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Universal styling for text */
-* {
-    font-family: 'Montserrat', sans-serif; /* Ensure all text uses Montserrat */
-    margin: 0;
+/* Body Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #e0f7fa); /* Light blue gradient background */
+    color: black;
+    padding: 20px;
+    font-size: 16px; /* Default font size for body text */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem; /* Large heading on larger screens */
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
     padding: 0;
 }
 
-/* Download Button Container */
-.download-btn-container {
-    text-align: center;
-    margin-top: 20px;
-    display: block; /* Ensure it's always displayed */
+nav ul li {
+    margin: 0 15px;
 }
 
-/* Download Button Style */
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Sections */
+section {
+    margin-top: 40px;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Download Resume Button */
+.download-btn-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
 .download-btn {
-    display: inline-flex;
-    align-items: center;
     background-color: #007bff;
     color: white;
     padding: 12px 30px;
     font-size: 18px;
-    font-weight: 500;
-    border-radius: 30px;
+    border-radius: 25px;
     text-decoration: none;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Download Button Hover Effects */
 .download-btn:hover {
     background-color: #0056b3;
     transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
 }
 
-/* Download Button Icon */
 .download-btn i {
     margin-left: 10px;
-    font-size: 20px;
-    transition: transform 0.3s ease;
 }
 
-/* Change the icon on hover */
-.download-btn:hover i {
-    transform: translateX(5px);
+/* Skills Section */
+#skills {
+    text-align: center;
 }
 
-/* Button Text */
-.download-text {
-    margin-right: 10px;
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-/* Remove underline from links */
-a {
-    text-decoration: none;
-    color: black;
+#skills ul {
+    list-style: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
 }
 
-/* Change color on hover */
-a:hover {
+#skills li {
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+#projects {
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact a {
     color: #007bff;
-    transition: color 0.3s ease;
+    text-decoration: none;
 }
 
-/* Media Query for mobile devices */
-@media (max-width: 600px) {
+/* Media Queries for Mobile and Tablet Devices */
+@media (max-width: 1024px) {
+    body {
+        padding: 15px; /* Slightly reduce padding on tablets */
+    }
+
+    header h1 {
+        font-size: 2.2rem; /* Slightly smaller heading */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav links vertically on tablets */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for stacked layout */
+    }
+
+    .download-btn {
+        padding: 10px 25px;
+        font-size: 16px; /* Slightly smaller button text */
+    }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
     body {
         padding: 10px;
     }
 
+    header h1 {
+        font-size: 2rem; /* Reduce heading size on smaller screens */
+    }
+
     nav ul {
-        padding: 0;
+        flex-direction: column; /* Stack nav links vertically */
         text-align: center;
     }
 
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        margin: 10px 0; /* Adjust margin for vertical layout */
     }
 
-    .btn {
-        padding: 12px 24px;
-        font-size: 16px;
+    .download-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    #skills ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    #skills li {
+        font-size: 1rem; /* Slightly smaller font size */
+    }
+}
+
+/* Media Queries for Extra Small Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Make font size smaller on very small devices */
+        padding: 8px;
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Smaller heading size for very small screens */
+    }
+
+    nav ul li {
+        margin: 8px 0; /* Reduce margin for very small screens */
+    }
+
+    .download-btn {
+        padding: 8px 18px;
+        font-size: 12px;
+    }
+
+    #about p, #skills ul, #projects, #contact {
+        padding: 0;
+        margin: 0;
     }
 }
