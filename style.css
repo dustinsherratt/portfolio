@@ -1,10 +1,19 @@
+/* Apply Montserrat to the whole website */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;  /* Apply Montserrat to the whole website */
     background: linear-gradient(to bottom, #ffffff, #add8e6); /* Light blue gradient */
+    background-color: #ffffff; /* Fallback color */
     color: black;
     margin: 0;
     padding: 20px;
     overflow: visible; /* Ensure visibility */
+}
+
+/* Universal styling for text */
+* {
+    font-family: 'Montserrat', sans-serif; /* Ensure all text uses Montserrat */
+    margin: 0;
+    padding: 0;
 }
 
 /* Download Button Container */
