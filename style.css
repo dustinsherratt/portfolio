@@ -1,12 +1,4 @@
-body {
-    font-family: 'Montserrat', sans-serif;  /* Apply Montserrat to the whole website */
-    background: linear-gradient(to bottom, #ffffff, #add8e6); /* Light blue gradient */
-    color: black;
-    margin: 0;
-    padding: 20px;
-}
-
-/* Download Button Container */
+/* General Styles for Download Button (Visible on All Screen Sizes) */
 .download-btn-container {
     text-align: center;
     margin-top: 20px;
@@ -27,6 +19,12 @@ body {
     cursor: pointer;
 }
 
+/* Ensure button is visible on all screen sizes */
+.download-btn-container {
+    display: block;
+}
+
+/* Download Button Hover Effects */
 .download-btn:hover {
     background-color: #0056b3;
     transform: scale(1.05); /* Slight scaling effect */
@@ -78,7 +76,6 @@ a:hover {
         margin: 10px 0; /* Adjust margin for vertical layout */
     }
 
-    /* Optional: Button class, if you have buttons with .btn */
     .btn {
         padding: 12px 24px; /* Larger buttons on mobile */
         font-size: 16px; /* Make button text more readable */
