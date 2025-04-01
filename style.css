@@ -5,6 +5,50 @@ body {
     margin: 0;
     padding: 20px;
 }
+/* Download Button Container */
+.download-btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Download Button Style */
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight scaling effect */
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+}
+
+/* Download Button Icon */
+.download-btn i {
+    margin-left: 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Change the icon on hover */
+.download-btn:hover i {
+    transform: translateX(5px); /* Move icon to the right */
+}
+
+/* Button Text */
+.download-text {
+    margin-right: 10px;
+}
+
 /* Remove underline from links */
 a {
     text-decoration: none; /* No underline */
