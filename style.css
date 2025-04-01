@@ -86,11 +86,11 @@ section p {
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row; /* Keep links in the same line */
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 0 15px;
     }
 
     section h2 {
@@ -113,11 +113,18 @@ section p {
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row; /* Keep links in the same line */
+        padding: 0;
+        justify-content: center;
     }
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        font-size: 1.2rem;
     }
 
     section h2 {
@@ -128,5 +135,17 @@ section p {
         padding: 10px 20px;
         font-size: 14px;
     }
-}
 
+    /* Make the sections still appear in the same line on mobile */
+    section {
+        margin-bottom: 20px;
+    }
+
+    #skills ul {
+        padding-left: 20px;
+    }
+
+    #skills li {
+        list-style-type: disc; /* Add bullets for skills list */
+    }
+}
