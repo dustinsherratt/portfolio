@@ -1,7 +1,17 @@
-/* General Styles for Download Button (Visible on All Screen Sizes) */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #add8e6); /* Light blue gradient */
+    color: black;
+    margin: 0;
+    padding: 20px;
+    overflow: visible; /* Ensure visibility */
+}
+
+/* Download Button Container */
 .download-btn-container {
     text-align: center;
     margin-top: 20px;
+    display: block; /* Ensure it's always displayed */
 }
 
 /* Download Button Style */
@@ -19,15 +29,10 @@
     cursor: pointer;
 }
 
-/* Ensure button is visible on all screen sizes */
-.download-btn-container {
-    display: block;
-}
-
 /* Download Button Hover Effects */
 .download-btn:hover {
     background-color: #0056b3;
-    transform: scale(1.05); /* Slight scaling effect */
+    transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
 }
 
@@ -40,7 +45,7 @@
 
 /* Change the icon on hover */
 .download-btn:hover i {
-    transform: translateX(5px); /* Move icon to the right */
+    transform: translateX(5px);
 }
 
 /* Button Text */
@@ -50,20 +55,20 @@
 
 /* Remove underline from links */
 a {
-    text-decoration: none; /* No underline */
-    color: black; /* Default link color */
+    text-decoration: none;
+    color: black;
 }
 
-/* Change color on hover for better interaction */
+/* Change color on hover */
 a:hover {
-    color: #007bff; /* Light blue color on hover */
-    transition: color 0.3s ease; /* Smooth color transition */
+    color: #007bff;
+    transition: color 0.3s ease;
 }
 
 /* Media Query for mobile devices */
 @media (max-width: 600px) {
     body {
-        padding: 10px; /* Reduce padding on small screens */
+        padding: 10px;
     }
 
     nav ul {
@@ -72,32 +77,12 @@ a:hover {
     }
 
     nav ul li {
-        display: block; /* Stack navigation items vertically */
-        margin: 10px 0; /* Adjust margin for vertical layout */
+        display: block;
+        margin: 10px 0;
     }
 
     .btn {
-        padding: 12px 24px; /* Larger buttons on mobile */
-        font-size: 16px; /* Make button text more readable */
+        padding: 12px 24px;
+        font-size: 16px;
     }
-}
-
-/* Navigation Links Style */
-nav ul li a {
-    color: black; /* Make the navigation links black by default */
-}
-
-h1, h2 {
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
 }
